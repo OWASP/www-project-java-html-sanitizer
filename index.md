@@ -4,6 +4,7 @@ layout: col-sidebar
 title: OWASP java html sanitizer
 tags: example-tag
 level: 4
+type: tool
 
 ---
 

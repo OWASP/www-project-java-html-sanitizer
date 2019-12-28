@@ -1,3 +1,4 @@
 ### Leaders
 
-* [Jim Manico](mailto://)
+* [Jim Manico](mailto:)
+* [Mike Samuel](mailto:)

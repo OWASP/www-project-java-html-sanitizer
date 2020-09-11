@@ -15,9 +15,7 @@ The project  is available at [OWASP HTML Sanitizer : Maven Central](https://sear
 
 
 ## Creating a HTML Policy
-
-You can view a few basic prepackaged policies for links, tables,
-integers, images and more here:
+You can view a few basic prepackaged policies for links, tables, integers, images and more here:
 <https://github.com/OWASP/java-html-sanitizer/blob/master/src/main/java/org/owasp/html/Sanitizers.java>.
 
     `PolicyFactory policy = Sanitizers.FORMATTING.and(Sanitizers.LINKS);`

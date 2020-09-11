@@ -11,7 +11,8 @@ tags: sanitizer
 ## How to Use
 
 ### Maven 
-The project  is available at [OWASP HTML Sanitizer : Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cowasp%20html%20sanitizer)
+
+The project is available at [OWASP HTML Sanitizer : Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cowasp%20html%20sanitizer)
 
 
 ## Creating a HTML Policy
@@ -23,7 +24,6 @@ You can view a few basic prepackaged policies for links, tables, integers, image
 
 The tests illustrate how to configure your own policy here:
 <https://github.com/OWASP/java-html-sanitizer/blob/master/src/test/java/org/owasp/html/HtmlPolicyBuilderTest.java>
-
 
     `PolicyFactory policy = new HtmlPolicyBuilder()`
     `   .allowElements("a")`
@@ -51,6 +51,7 @@ The tests illustrate how to configure your own policy here:
 Please note that the elements "a", "font", "img", "input" and "span" need to be explicitly whitelisted using the \`allowWithoutAttributes()\` method if you want them to be allowed through the filter when these elements do not include any attributes.
 
 You can also use the default "ebay" and "slashdot" policies. 
+
 The [Slashdot policy](https://github.com/OWASP/java-html-sanitizer/blob/master/src/main/java/org/owasp/html/examples/SlashdotPolicyExample.java) allows the following tags ("a", "p", "div", "i", "b", "em", "blockquote", "tt", "strong"n "br", "ul", "ol", "li") and only certain attributes. 
 This policy also allows for the custom slashdot tags,"quote" and "ecode".
 
@@ -69,19 +70,21 @@ That said, even if care is taken, CSS has a large attack surface, so not using i
 
 Inline images use the data URI scheme to embed images directly within web pages. The following describes how to allow inline images in an HTML Sanitizer policy.
 
-1\) Add the "data" protocol do your whitelist. Se example [how to add "data" protocol.](https://static.javadoc.io/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer/20160628.1/org/owasp/html/HtmlPolicyBuilder.html#allowUrlProtocols)
+1\) Add the "data" protocol do your whitelist. Se example [how to add "data" protocol.](https://www.javadoc.io/doc/com.googlecode.owasp-java-html-sanitizer/owasp-java-html-sanitizer/20160628.1/org/owasp/html/HtmlPolicyBuilder.html#allowUrlProtocols-java.lang.String...-)
+
     `.allowUrlProtocols("data")`
 
 2\) You can then allow an attribute with an extra check thus
+
     `.allowAttributes("src")`
     `.matching(...)`
     `.onElements("img")`
 
 3\) There are a number of things you can do in the matching part such as allow the following instead of just allowing data.
 
-### <data:image/>`...`
 
 4\) Since allowUrlProtocols("data") allows data URLs anywhere data URLs are allowed, you might want to also add a matcher to any other URL attributes that reject anything with a colon that does not start with http: or https: or mailto:
+
     `.allowAttributes("href")`
     `.matching(...)`
     `.onElements("a")`

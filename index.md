@@ -1,8 +1,8 @@
 ---
 
 layout: col-sidebar
-title: OWASP Java Html Sanitizer
-tags: java-sanitizer
+title: OWASP Java HTML Sanitizer
+tags: sanitizer
 level: 3
 type: tool
 

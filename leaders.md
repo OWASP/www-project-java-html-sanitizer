@@ -1,4 +1,4 @@
 ### Leaders
 
-* [Jim Manico](mailto:)
-* [Mike Samuel](mailto:)
+* [Jim Manico](mailto:mailto:jim.manico@owasp.org)
+* [Mike Samuel](mailto:mikesamuel@gmail.com)

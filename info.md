@@ -12,7 +12,7 @@
 [OWASP HTML Sanitizer at GitHub](https://github.com/owasp/java-html-sanitizer)
 
 
-## Related Projects
-- [OWASP JSON Sanitizer](https://owasp.org/www-project-json-sanitizer/)
-- [OWASP Java Encoder Project](https://owasp.org/www-project-java-encoder/)
-- [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/) 
+## Change Log
+For recent release notes, please visit the <a href="https://github.com/OWASP/java-html-sanitizer/blob/master/change_log.md">changelog on GitHub</a>.</p>
+
+

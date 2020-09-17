@@ -18,65 +18,24 @@ The OWASP HTML Sanitizer Projects provides Java based HTML sanitization of untru
 The OWASP HTML Sanitizer is a fast and easy to configure HTML Sanitizer written in Java which lets you include HTML authored by third-parties in your web application while protecting against XSS. The existing dependencies are on guava and JSR 305. The other jars are only needed by the test suite. The JSR 305 dependency is a compile-only dependency, only needed for annotations. This code was written with security best practices in mind, has an extensive test suite, and has undergone adversarial security review. A great place to get started using the OWASP Java HTML Sanitizer is here: <a href="https://github.com/OWASP/java-html-sanitizer/blob/master/docs/getting_started.md">https://github.com/OWASP/java-html-sanitizer/blob/master/docs/getting_started.md</a>.
 
 ## Benefits
-- Very easy to use. It allows for simple programmatic POSITIVE policy configuration (see below). No XML config.
-- Actively maintained by Mike Samuel from Google's AppSec team!
-- Passing 95+% of AntiSamy's unit tests plus many more.
-- This is code from the Caja project that was donated by Google. It is rather high performance and low memory utilization.
-- Java 1.5+
-- Provides 4X the speed of <a href="https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project">AntiSamy</a> sanitization in DOM mode and 2X the speed of AntiSamy in SAX mode.
+* Very easy to use. It allows for simple programmatic POSITIVE policy configuration (see below). No XML config.
+* Actively maintained by Mike Samuel from Google's AppSec team!
+* Passing 95+% of AntiSamy's unit tests plus many more.
+* This is code from the Caja project that was donated by Google. It is rather high performance and low memory utilization.
+* Java 1.5+
+* Provides 4X the speed of <a href="https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project">AntiSamy</a> sanitization in DOM mode and 2X the speed of AntiSamy in SAX mode.
 
 
 ## Questions
-- <b>How was this project tested?</b>  This code was written with security best practices in mind, has an extensive test suite, and has undergone [adversarial security review](https://github.com/OWASP/java-html-sanitizer/blob/master/docs/attack_review_ground_rules.md).
-- <b>How is this project deployed?</b> This project is best deployed through [Maven](https://github.com/OWASP/java-html-sanitizer/blob/master/docs/getting_started.md)
+*  <b>How was this project tested?</b>  This code was written with security best practices in mind, has an extensive test suite, and has undergone [adversarial security review](https://github.com/OWASP/java-html-sanitizer/blob/master/docs/attack_review_ground_rules.md).
+* <b>How is this project deployed?</b> This project is best deployed through [Maven](https://github.com/OWASP/java-html-sanitizer/blob/master/docs/getting_started.md)
 
 
 ## Licensing
 The OWASP HTML Sanitizer is free to use and is dual licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 License</a> and the <a href="http://opensource.org/licenses/BSD-3-Clause">New BSD License</a>.
 
 ## Related Projects
-- [OWASP JSON Sanitizer](https://owasp.org/www-project-json-sanitizer/)
-- [OWASP Java Encoder Project](https://owasp.org/www-project-java-encoder/)
-- [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/) 
+* [OWASP JSON Sanitizer](https://owasp.org/www-project-json-sanitizer/)
+* [OWASP Java Encoder Project](https://owasp.org/www-project-java-encoder/)
+* [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/) 
 
-
-<!-- Standard Chapter Page Template
-This is an example of a Project or Chapter page.
-Please change these items to indicate the actual information you wish to present. In addition to this information, the 'front-matter' above the text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
-
-{front matter for this file}
-
-```
-- layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
-- title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
-- tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
-- region: This is the region you are in according to our data
-```
-
-{copy for this file (index.md)}
-Replace the text above the commented area with your information in the format below:
-```
-## Welcome
-Include some information here about your chapter
-
-## Participation
-The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software. All of our projects ,tools, documents, forums, and chapters are free and open to anyone interested in improving application security. 
-
-Chapters are led by local leaders in accordance with the [Chapter Leader Handbook](/www-policy/rules-of-procedure/chapter-handbook). Financial contributions should only be made online using the authorized online donation button. To be a SPEAKER at ANY OWASP Chapter in the world simply review the [speaker agreement](/www-policy/speaker-agreement) and then contact the local chapter leader with details of what OWASP Project, independent research, or related software security topic you would like to present.
-
-Everyone is welcome and encouraged to participate in our [Projects](/projects), [Local Chapters](/chapters), [Events](/events), [Online Groups](https://groups.google.com/a/owasp.com/){:target='_blank'}, and [Community Slack Channel](https://owasp.slack.com/){:target='_blank'}. We especially encourage diversity in all our initiatives. OWASP is a fantastic place to learn about application security, to network, and even to build your reputation as an expert. We also encourage you to be [become a member](/membership) or consider a [donation](/donate) to support our ongoing work.
-
-## Local News
-- Meeting Location
-- Everyone is welcome to join us at our chapter meetings.
-
-```
-{info.md}
-
-This separate file is where you should place links to your Google Group and Meetup page. It will be automatically rendered in the column sidebar.
-
-{leaders.md}
-
-Another separate file that should simply include each leaders name with mailto link as a list. It will also be automatically rendered in the column sidebar.
-
--->

@@ -7,7 +7,6 @@ order: 3
 tags: sanitizer
 ---
 
-
 ## News and Events
 - [10 Sep 2020] Update OWASP wiki page
 - [20 Feb 2018] Update 20180219.1 addresses iOS/MacOS "text bomb"

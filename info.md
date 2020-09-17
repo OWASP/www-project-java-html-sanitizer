@@ -1,12 +1,9 @@
-<!--### Project Information
-* Project Level
-* Project Type
-* Version, etc
+### Project Information
+* Project Level: 3
+* Project Type: code
 
-### Downloads or Social Links
-* [Download](#)
-* [Social Link](#)
--->
+
+
 
 ### Code Repository
 [OWASP HTML Sanitizer at GitHub](https://github.com/owasp/java-html-sanitizer)

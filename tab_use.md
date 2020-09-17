@@ -7,22 +7,21 @@ order: 2
 tags: sanitizer
 ---
 
-
 ## How to Use
-
-### Maven 
-
 The project is available at [OWASP HTML Sanitizer : Maven Central](https://search.maven.org/#search%7Cga%7C1%7Cowasp%20html%20sanitizer)
 
 
 ## Creating a HTML Policy
-You can view a few basic prepackaged policies for links, tables, integers, images and more here:
+
+### 1. Use prepackaged policies 
+You can view basic prepackaged policies for links, tables, integers, images at:
 <https://github.com/OWASP/java-html-sanitizer/blob/master/src/main/java/org/owasp/html/Sanitizers.java>.
 
     `PolicyFactory policy = Sanitizers.FORMATTING.and(Sanitizers.LINKS);`
     `String safeHTML = policy.sanitize(untrustedHTML);`
 
-The tests illustrate how to configure your own policy here:
+### 2. Configure own policy 
+Check the tests on how to configure your own policy at:
 <https://github.com/OWASP/java-html-sanitizer/blob/master/src/test/java/org/owasp/html/HtmlPolicyBuilderTest.java>
 
     `PolicyFactory policy = new HtmlPolicyBuilder()`
@@ -33,7 +32,8 @@ The tests illustrate how to configure your own policy here:
     `   .build();`
     `String safeHTML = policy.sanitize(untrustedHTML);`
 
-... or you can write custom policies : 
+### 3. Define custom policies 
+You can write custom policies : 
 
     `PolicyFactory policy = new HtmlPolicyBuilder()`
     `   .allowElements("p")`
@@ -50,13 +50,13 @@ The tests illustrate how to configure your own policy here:
 
 Please note that the elements "a", "font", "img", "input" and "span" need to be explicitly whitelisted using the \`allowWithoutAttributes()\` method if you want them to be allowed through the filter when these elements do not include any attributes.
 
-You can also use the default "ebay" and "slashdot" policies. 
+### 4. Use ebay / slashdot policies 
+You can also use the default "[ebay](https://github.com/OWASP/java-html-sanitizer/blob/master/src/main/java/org/owasp/html/examples/EbayPolicyExample.java)" and "slashdot" policies. 
 
 The [Slashdot policy](https://github.com/OWASP/java-html-sanitizer/blob/master/src/main/java/org/owasp/html/examples/SlashdotPolicyExample.java) allows the following tags ("a", "p", "div", "i", "b", "em", "blockquote", "tt", "strong"n "br", "ul", "ol", "li") and only certain attributes. 
 This policy also allows for the custom slashdot tags,"quote" and "ecode".
 
 ### CSS Sanitization
-
 CSS sanitization is challenging.
 
 We disallow position:sticky and position:fixed so that client code can use a position:relative;overflow:hidden to contain self-styling sanitized snippets. Embedders of sanitized content do have to consistently do that and make sure that contributed content is clearly demarcated.

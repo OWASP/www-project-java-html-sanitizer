@@ -29,5 +29,5 @@ The OWASP HTML Sanitizer is a fast and easy to configure HTML Sanitizer written 
 
 
 ## Licensing
-The OWASP HTML Sanitizer is free to use and is dual licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 License</a> and the <a href="http://opensource.org/licenses/BSD-3-Clause">New BSD License</a>.
+The OWASP HTML Sanitizer is free to use and is dual licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 License</a> and the <a href="http://opensource.org/licenses/BSD-3-Clause">New BSD License</a>..
 

@@ -20,7 +20,7 @@ The OWASP HTML Sanitizer is a fast and easy to configure HTML Sanitizer written 
 * Passing 95+% of AntiSamy's unit tests plus many more.
 * This is code from the Caja project that was donated by Google. It is rather high performance and low memory utilization.
 * Java 1.5+
-* Provides 4X the speed of <a href="https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project">AntiSamy</a> sanitization in DOM mode and 2X the speed of AntiSamy in SAX mode.
+* Provides 4X the speed of <a href="https://owasp.org/www-project-antisamy/">AntiSamy</a> sanitization in DOM mode and 2X the speed of AntiSamy in SAX mode.
 
 
 ## Questions

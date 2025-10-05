@@ -1,0 +1,26 @@
+audience:
+  - builder
+  - defender
+leaders:
+  - name: Mike Samuel
+    email: mikesamuel@gmail.com
+    github: mikesamuel
+  - name: Jim Manico
+    email: jim.manico@owasp.org
+    github: jmanico
+level: 3
+name: OWASP Java HTML Sanitizer
+pitch: Description for OWASP Java HTML Sanitizer
+repositories:
+  - name: www-project-java-html-sanitizer
+    url: https://github.com/OWASP/www-project-java-html-sanitizer
+    description: OWASP Foundation Web Repository
+  - name: java-html-sanitizer
+    url: https://github.com/OWASP/java-html-sanitizer
+    description: Takes third-party HTML and produces HTML that is safe to embed in your web application.  Fast and easy to configure.
+tags:
+  - sanitizer
+  - custom-tag-1
+  - custom-tag-2
+type: tool
+website: https://owasp.org/www-project-java-html-sanitizer

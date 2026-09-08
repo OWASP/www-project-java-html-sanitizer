@@ -11,6 +11,6 @@
 
 
 ### Change Log
-* For recent release notes, please visit the <a href="https://github.com/OWASP/java-html-sanitizer/blob/master/change_log.md">changelog on GitHub</a>.
+* For recent release notes, please visit the <a href="https://github.com/OWASP/java-html-sanitizer/blob/main/change_log.md">changelog on GitHub</a>.
 
 

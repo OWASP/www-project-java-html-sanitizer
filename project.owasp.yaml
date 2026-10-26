@@ -22,4 +22,4 @@ tags:
   - xss
   - java
 type: tool
-website: https://owasp.org/www-project-java-html-sanitizer
+website: https://owasp.org/projects/java-html-sanitizer
